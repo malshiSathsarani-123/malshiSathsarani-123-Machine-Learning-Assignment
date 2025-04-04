@@ -1,0 +1,156 @@
+2025-03-29 10:58:37,740 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://192.168.8.104:4000
+2025-03-29 10:58:37,740 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 10:58:37,742 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 10:58:38,993 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 10:58:39,011 - werkzeug - INFO -  * Debugger PIN: 104-849-166
+2025-03-29 10:58:43,586 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:58:43] "GET / HTTP/1.1" 200 -
+2025-03-29 10:58:43,639 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:58:43] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-03-29 10:58:43,641 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:58:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-29 10:58:44,309 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:58:44] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 10:58:44,334 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:58:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-29 10:59:09,024 - __main__ - INFO - Received prediction request with data: {'age': '55', 'job': 'management', 'marital': 'married', 'education': 'high.school', 'default': 'no', 'housing': 'no', 'loan': 'no'}
+2025-03-29 10:59:09,033 - __main__ - ERROR - Error making prediction: 'NoneType' object has no attribute 'transform'
+Traceback (most recent call last):
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py", line 61, in predict
+    input_processed = preprocessor.transform(input_df)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transform'
+2025-03-29 10:59:09,035 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:59:09] "POST /predict HTTP/1.1" 200 -
+2025-03-29 10:59:09,064 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:59:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 10:59:09,065 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:59:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 10:59:09,077 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:59:09] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 10:59:59,858 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 10:59:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:00:06,366 - __main__ - INFO - Received prediction request with data: {'age': '55', 'job': 'admin.', 'marital': 'divorced', 'education': 'basic.4y', 'default': 'no', 'housing': 'no', 'loan': 'no'}
+2025-03-29 11:00:06,372 - __main__ - ERROR - Error making prediction: 'NoneType' object has no attribute 'transform'
+Traceback (most recent call last):
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py", line 61, in predict
+    input_processed = preprocessor.transform(input_df)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transform'
+2025-03-29 11:00:06,375 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:06] "POST /predict HTTP/1.1" 200 -
+2025-03-29 11:00:06,441 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:00:06,465 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:00:06,502 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:06] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:00:23,268 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:00:29,223 - __main__ - INFO - Received prediction request with data: {'age': '43', 'job': 'admin.', 'marital': 'divorced', 'education': 'basic.4y', 'default': 'no', 'housing': 'no', 'loan': 'no'}
+2025-03-29 11:00:29,224 - __main__ - ERROR - Error making prediction: 'NoneType' object has no attribute 'transform'
+Traceback (most recent call last):
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py", line 61, in predict
+    input_processed = preprocessor.transform(input_df)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transform'
+2025-03-29 11:00:29,226 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:29] "POST /predict HTTP/1.1" 200 -
+2025-03-29 11:00:29,267 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:00:29,276 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:00:29,316 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:29] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:00:51,696 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.8.104:5001
+2025-03-29 11:00:51,697 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 11:00:51,699 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 11:00:53,020 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 11:00:53,036 - werkzeug - INFO -  * Debugger PIN: 104-849-166
+2025-03-29 11:00:54,434 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:54] "GET / HTTP/1.1" 200 -
+2025-03-29 11:00:54,469 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:54] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-03-29 11:00:54,469 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-29 11:00:54,555 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:54] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:00:54,574 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:00:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-29 11:01:01,835 - __main__ - INFO - Received prediction request with data: {'age': '50', 'job': 'admin.', 'marital': 'divorced', 'education': 'basic.4y', 'default': 'no', 'housing': 'no', 'loan': 'no'}
+2025-03-29 11:01:01,838 - __main__ - ERROR - Error making prediction: 'NoneType' object has no attribute 'transform'
+Traceback (most recent call last):
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py", line 61, in predict
+    input_processed = preprocessor.transform(input_df)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transform'
+2025-03-29 11:01:01,840 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:01:01] "POST /predict HTTP/1.1" 200 -
+2025-03-29 11:01:01,861 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:01:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:01:01,865 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:01:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:01:01,880 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:01:01] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:07:33,639 - werkzeug - INFO -  * Detected change in '/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/src/preprocessing.py', reloading
+2025-03-29 11:07:33,911 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 11:07:35,987 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 11:07:36,001 - werkzeug - INFO -  * Debugger PIN: 104-849-166
+2025-03-29 11:11:49,334 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.8.104:5001
+2025-03-29 11:11:49,335 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 11:11:49,336 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 11:11:50,977 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 11:11:50,992 - werkzeug - INFO -  * Debugger PIN: 104-849-166
+2025-03-29 11:11:55,115 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:11:55] "GET / HTTP/1.1" 200 -
+2025-03-29 11:11:55,155 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:11:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:11:55,169 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:11:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:11:55,206 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:11:55] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:12:02,218 - __main__ - INFO - Received prediction request with data: {'age': '43', 'job': 'admin.', 'marital': 'divorced', 'education': 'basic.4y', 'default': 'no', 'housing': 'no', 'loan': 'no'}
+2025-03-29 11:12:02,221 - __main__ - ERROR - Error making prediction: 'NoneType' object has no attribute 'transform'
+Traceback (most recent call last):
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py", line 61, in predict
+    input_processed = preprocessor.transform(input_df)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transform'
+2025-03-29 11:12:02,223 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:12:02] "POST /predict HTTP/1.1" 200 -
+2025-03-29 11:12:02,248 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:12:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:12:02,249 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:12:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:12:02,260 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:12:02] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:12:57,991 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.8.104:5001
+2025-03-29 11:12:57,991 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 11:12:57,993 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 11:12:59,200 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 11:12:59,214 - werkzeug - INFO -  * Debugger PIN: 104-849-166
+2025-03-29 11:13:04,365 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:04] "GET / HTTP/1.1" 200 -
+2025-03-29 11:13:04,397 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:13:04,405 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:13:04,459 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:04] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:13:13,368 - __main__ - INFO - Received prediction request with data: {'age': '43', 'job': 'management', 'marital': 'married', 'education': 'high.school', 'default': 'no', 'housing': 'no', 'loan': 'no'}
+2025-03-29 11:13:13,371 - __main__ - ERROR - Error making prediction: 'NoneType' object has no attribute 'transform'
+Traceback (most recent call last):
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py", line 61, in predict
+    input_processed = preprocessor.transform(input_df)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'transform'
+2025-03-29 11:13:13,373 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:13] "POST /predict HTTP/1.1" 200 -
+2025-03-29 11:13:13,395 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:13:13,396 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:13:13,408 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:13:13] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:16:40,433 - werkzeug - INFO -  * Detected change in '/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/src/modeling.py', reloading
+2025-03-29 11:16:40,692 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 11:16:42,757 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 11:16:42,771 - werkzeug - INFO -  * Debugger PIN: 104-849-166
+2025-03-29 11:16:53,919 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.8.104:5001
+2025-03-29 11:16:53,919 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 11:16:53,920 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 11:16:55,277 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 11:16:55,290 - werkzeug - INFO -  * Debugger PIN: 104-849-166
+2025-03-29 11:16:57,235 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:16:57] "GET / HTTP/1.1" 200 -
+2025-03-29 11:16:57,285 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:16:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:16:57,286 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:16:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:16:57,327 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:16:57] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:17:02,484 - __main__ - INFO - Received prediction request with data: {'age': '23', 'job': 'admin.', 'marital': 'single', 'education': 'basic.4y', 'default': 'no', 'housing': 'no', 'loan': 'no'}
+2025-03-29 11:17:02,488 - __main__ - ERROR - Error making prediction: columns are missing: {'dummy', 'dummy_cat'}
+Traceback (most recent call last):
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py", line 61, in predict
+    input_processed = preprocessor.transform(input_df)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/.venv/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/.venv/lib/python3.12/site-packages/sklearn/compose/_column_transformer.py", line 1090, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'dummy', 'dummy_cat'}
+2025-03-29 11:17:02,492 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:17:02] "POST /predict HTTP/1.1" 200 -
+2025-03-29 11:17:02,514 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:17:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-29 11:17:02,517 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:17:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-03-29 11:17:02,534 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 11:17:02] "[33mGET /logo.png HTTP/1.1[0m" 404 -
+2025-03-29 11:18:52,295 - werkzeug - INFO -  * Detected change in '/Users/apple/Documents/My/GDSE/Moduls/ML/bank-marketing-prediction/app.py', reloading
+2025-03-29 11:18:52,520 - werkzeug - INFO -  * Restarting with stat

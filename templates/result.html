@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Marketing Prediction - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <section class="result-container">
+            <h2>Prediction Result</h2>
+
+            {% if result.error %}
+                <div class="error-message">
+                    <p>{{ result.message }}</p>
+                    <p>Error details: {{ result.error }}</p>
+                </div>
+            {% else %}
+                <div class="prediction {% if result.prediction == 'yes' %}positive{% else %}negative{% endif %}">
+                    <p class="prediction-result">{{ result.prediction|upper }}</p>
+                    <p class="probability">Probability: {{ result.probability }}</p>
+
+                    {% if result.message %}
+                        <div class="warning-message">
+                            <p>{{ result.message }}</p>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            <div class="actions">
+                <a href="/" class="button">Make Another Prediction</a>
+            </div>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
